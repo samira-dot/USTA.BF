@@ -1,0 +1,168 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <title>DP</title>
+        <link href="form.css" rel="stylesheet">	
+    </head>
+    <body>
+ <div id="header"><img src="logo2.png" alt="premier block"/>
+        </div> 
+        <nav class="navbar">
+            <a href="acceuil.html" class="logo">Accueil</a>
+            <div class="hamburger-menu" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links" style="list-style: none;">
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="Académique.html">Academique</a></li>
+                <li><a href="Admission.html">Admission</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav> 
+
+         <div class="background-wrapper"> 
+                <img src="interface.jpg" alt="arrière plan" class="background-image"> 
+            </div>
+ <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const navLinks = document.getElementById('nav-links');
+
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener('click', () => {
+                    hamburgerBtn.classList.toggle('open');
+                    navLinks.classList.toggle('active');
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburgerBtn.classList.remove('open');
+                        navLinks.classList.remove('active');
+                    });
+                });
+            } else {
+                console.error("Éléments 'hamburger-btn' ou 'nav-links' non trouvés.");
+            }
+        });
+    </script>
+
+        <h1 style="background-color: cornflowerblue;" width="200px" height="200px" align="center" style="font-size: 32px;"> DROIT PRIVE</h1> 
+
+        <div class="contenu">
+        <h2><u>Description du Droit Privé</u></h2>    
+        <p>Le droit privé est l'ensemble des règles juridiques relatives aux relations entre les personnes physiques ou entre les personnes morales privées(sociétés,associations.)Le Droit Privé est donc un domaine essentiel qui touche presque tous les aspects de notre vie quotidienne, de la naissance au décès, en passant par les relations familiales, le travail ou les affaires.</p>
+         <p>En résumé, le droit privé est le cadre juridique de la vie quotidienne des individus et des entreprises, régissant leurs interactions, leurs droits et leurs obligations dans un esprit d'égalité et de liberté.</p>
+        <h2><u>Les Principaux Enseignants du droit privé</u></h2>
+        <ul>
+            <li>Dr Hamadou COULIBALY</li>
+            <li>Dr Sita BARRO/DEME</li>
+            <li>Dr Bintou TALL/SERE</li>
+            <li>Dr Hamidou DIALLO</li>
+        </ul><br><br>
+        
+        <u><h2 align="center">Calendrier Académique - Droit Privé (Année Universitaire 2025-2026)</h2></u>
+        <table border="5" width="100%" cellpading="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Périodes</th>
+                <th>Déroulement des activités</th>
+                <th>Cours</th>
+                <th>Travaux Dirigés</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <b><td colspan="4" align="center"><strong>Semestre 1 (Octobre 2025 - Février 2026)</strong></td></b>
+            </tr>
+            <tr>
+                <td><strong>Octobre - Novembre 2025</strong></td>
+                <td><strong>Début des cours & Travaux Dirigés</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Droit des Contrats Spéciaux(20h)</strong></li>
+                        <li><strong>Droit des Sûretés(20h)</strong></li>
+                        <li><strong>Procédure Civile(20h)</strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong> TD Droit des Contrats Spéciaux(15h)</strong></li>
+                        <li><strong> TD Droit des Sûretés(15h)</strong></li>
+                        <li><strong>TD Procédure Civile(15h)</strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Décembre 2025</strong></td>
+                <td><strong><font color="red">Fin des cours & Examens du S1</strong></td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Délibération du Semestre1</font></strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Session de rattrapage du S1</font></strong></li>
+                        <li><strong><font color="red">Délibération de la session de rattrapage du S1</font></strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Janvier 2026</strong></td>
+                <td colspan="3" align="center"><strong><font color="red">Fin du Semestre1 & Début du Semestre2</strong></td>
+                
+            <tr>
+                <b><td colspan="4" align="center"><strong>Semestre 2 (Février2026 - Juillet 2026)</strong></td></b>
+            </tr>
+            <tr>
+                <td><strong>Février - Mars 2026</strong></td>
+                <td><strong>Début des cours & Travaux Dirigés</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Droit de la Famille(20h)</strong></li>
+                        <li><strong>Régimes Matrimoniaux(20h)</strong></li>
+                        <li><strong>Droit Social (Travail & Sécurité Sociale)(20h)</strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong> TDDroit de la Famille(15h)</strong></li>
+                        <li><strong> TD Régimes Matrimoniaux(15h)</strong></li>
+                        <li><strong> TD Droit Social (Travail & Sécurité Sociale)(15h)</strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Mai - Début Juin 2026</strong></td>
+                <td><strong><font color="red">Fin des cours & Examens S2</font></strong></td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Délibération du Semestre2</font></strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Session de rattrapage du S2</font></strong></li>
+                        <li><strong><font color="red">Délibération de la session de rattrapage du S1 </font></strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Juillet 2026</strong></td>
+                <td colspan="3" align="center"><strong><font color="red">Fin du Semestre2</font></strong></td>
+                 </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+       <div id="footer">
+        <div>&copy; 2025 Université Saint Thomas D'Acquin.</div>
+        <div><span>📍️</span> 06 BP:10212 Ouagadougou 06, Ouagadougou</div>
+        <div><span>📞️</span> 25 40 77 99</div>
+    </div>
+    </body>
+    </html>
+
+            

@@ -1,0 +1,167 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <title>economie</title>
+        <link href="form.css" rel="stylesheet">	
+    </head>
+    <body>
+         <div id="header"><img src="logo2.png" alt="premier block"/>
+        </div> 
+        <nav class="navbar">
+            <a href="acceuil.html" class="logo">Acceuil</a>
+            <div class="hamburger-menu" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links" style="list-style: none;">
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="Académique.html">Academique</a></li>
+                <li><a href="Admission.html">Admission</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav> 
+
+         <div class="background-wrapper"> 
+                <img src="interface.jpg" alt="arrière plan" class="background-image"> 
+            </div>
+ <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const navLinks = document.getElementById('nav-links');
+
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener('click', () => {
+                    hamburgerBtn.classList.toggle('open');
+                    navLinks.classList.toggle('active');
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburgerBtn.classList.remove('open');
+                        navLinks.classList.remove('active');
+                    });
+                });
+            } else {
+                console.error("Éléments 'hamburger-btn' ou 'nav-links' non trouvés.");
+            }
+        });
+    </script>
+        
+         <h1 style="background-color: cornflowerblue;" width="200px" height="200px" align="center" style="font-size: 32px;">MACROECONOMIE ET GESTION DU DEVELOPPEMENT</h1> 
+
+        <div class="contenu">
+        <h2><u>Description de la Macroecoconomie et Gestion du Developpement</u></h2>    
+        <p>La macroeconomie est l'étude de l'économie dans son ensemble.Ainsi la théorie macroeconomie permet à travers l'analyse des relations entreles grands agr&gats de l'économie d'en comprendre le fonctionnement et de prévoir leur évolution lorsque l'environnement change à la suite de chocs économiques(crises économiques,conflits,...)</p>
+        <h2><u>Les Principaux Enseignants en Macroeconomie et Gestion du Devoloppement</u></h2>
+        <ul>
+            <li>Dr Blaise SANOU</li>
+            <li>Dr Nasser OUEDRAOGO</li>
+            <li>Dr Dophini TRAORE</li>
+            <li>Dr Angela KABORE</li>
+        </ul><br><br>
+        
+        <u><h2 align="center">Calendrier Académique - Macroeconomie et Gestion du Developpement (Année Universitaire 2025-2026)</h2></u>
+        <table border="5" width="100%" cellpading="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Périodes</th>
+                <th>Déroulement des activités</th>
+                <th>Cours</th>
+                <th>Travaux Dirigés</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <b><td colspan="4" align="center"><strong>Semestre 1 (Octobre 2025 - Février 2026)</strong></td></b>
+            </tr>
+            <tr>
+                <td><strong>Octobre - Novembre 2025</strong></td>
+                <td><strong>Début des cours & Travaux Dirigés</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Macroeconomie  I(60h)</strong></li>
+                        <li><strong>Statistiques descriptives et inferentielles(30h)</strong></li>
+                        <li><strong>Histoire de la pensée économique(20h)</strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong> TD Macroeconomie I(30h)</strong></li>
+                        <li><strong> TD Statisques descriptives et inferentielles(20h)</strong></li>
+                        <li><strong>TD Histoire de la pensée économique(20h)</strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Décembre 2025</strong></td>
+                <td><strong><font color="red">Fin des cours & Examens du S1</strong></td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Délibération du Semestre1</font></strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Session de rattrapage du S1</font></strong></li>
+                        <li><strong><font color="red">Délibération de la session de rattrapage du S1</font></strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Janvier 2026</strong></td>
+                <td colspan="3" align="center"><strong><font color="red">Fin du Semestre1 & Début du Semestre2</strong></td>
+                
+            <tr>
+                <b><td colspan="4" align="center"><strong>Semestre 2 (Février2026 - Juillet 2026)</strong></td></b>
+            </tr>
+            <tr>
+                <td><strong>Février - Mars 2026</strong></td>
+                <td><strong>Début des cours & Travaux Dirigés</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Macroeconomie II(60h) </strong></li>
+                        <li><strong>Econométrie des séries temporelles(60h)</strong></li>
+                        <li><strong>politiques économiques(budgétaires et monétaires)(30h)</strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong>TD Macroeconomie II(30h)</strong></li>
+                        <li><strong>TD Econométrie des séries temporelles(15h)</strong></li>
+                        <li><strong>TD politiques économiques(budgétaires et monétaires)(15h)</strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Mai - Début Juin 2026</strong></td>
+                <td><strong><font color="red">Fin des cours & Examens S2</font></strong></td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Délibération du Semestre2</font></strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Session de rattrapage du S2</font></strong></li>
+                        <li><strong><font color="red">Délibération de la session de rattrapage du S1 </font></strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Juillet 2026</strong></td>
+                <td colspan="3" align="center"><strong><font color="red">Fin du Semestre2</font></strong></td>
+                 </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+            <div id="footer">
+        <div>&copy; 2025 Université Saint Thomas D'Acquin.</div>
+        <div><span>📍️</span> 06 BP:10212 Ouagadougou 06, Ouagadougou</div>
+        <div><span>📞️</span> 25 40 77 99</div>
+    </div>
+    </body>
+    </html>
+
+            

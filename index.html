@@ -1,0 +1,94 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <title>page d'acceuil de l'USTA</title>
+        <link href="form.css" rel="stylesheet">	
+    </head>
+    
+    <body>
+
+    <div id="header">
+        <img src="logo2.png" alt="premier block" />
+    </div>
+
+    <nav class="navbar">
+        <a href="acceuil.html" class="logo">Accueil</a>
+
+        <div class="hamburger-menu" id="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links" style="list-style: none;">
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="Académique.html">Academique</a></li>
+            <li><a href="Admission.html">Admission</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+    </nav>
+
+    <div class="background-wrapper">
+        <img src="interface.jpg" alt="arrière plan" class="background-image" />
+    </div>
+
+    <div class="content">
+        <h1>Bienvenue à l'Université Saint Thomas d'Acquin</h1>
+    </div>
+
+    <div class="text">
+        <div class="presentation">
+            <h1 style="font-size: 18px;">PRESENTATION DE L'UNIVERSITE</h1>
+            <p>
+                L'Université Saint Thomas d'Acquin est une Université privé catholique d'Afrique de l'Ouest
+                situé à Ouagadougou, la capitale du Burkina Faso. Sa création soutenue par les pouvoirs publics
+                et la communauté scientifique burkinabè, est une reponse aux recommandations fortes des
+                Assises Nationales de l'Enseignement Catholique de 1996 en faveur d'un engagement de l'Eglise
+                dans le domaine de l'enseignement supérieur. Le projet de création fut conduit de 2001 à 2003,
+                par une commission mise en place par le Secrétariat National de l'Enseignement Catholique (SNEC),
+                regroupant les laics et les hommes d'église. L'USTA ouvre finalement ses portes en Octobre 2004.
+            </p>
+            <br /><br />
+        </div>
+        <div class="mission">
+            <h1>MISSION DE L'UNIVERSITE</h1>
+            <p>
+                L'Université Saint Thomas d'Acquin contribue par l'enseignement supérieur de recherche à la formation
+                intégrale de cadres qualifiés, dévoués et compétents. l'USTA a pour but de promouvoir le developpement
+                national de l'enseignement et de la recherche; Renforcer les capacités de l'Eglise à promouvoir les
+                nobles aspirations des communautés nationales, africaines et internationales.
+            </p>
+            <br /><br />
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburgerBtn = document.getElementById("hamburger-btn");
+            const navLinks = document.getElementById("nav-links");
+
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener("click", () => {
+                    hamburgerBtn.classList.toggle("open");
+                    navLinks.classList.toggle("active");
+                });
+
+                navLinks.querySelectorAll("a").forEach((link) => {
+                    link.addEventListener("click", () => {
+                        hamburgerBtn.classList.remove("open");
+                        navLinks.classList.remove("active");
+                    });
+                });
+            } else {
+                console.error("Éléments 'hamburger-btn' ou 'nav-links' non trouvés.");
+            }
+        });
+    </script>
+
+    <footer class="footer">
+        <div>&copy; 2025 Université Saint Thomas D'Acquin.</div>
+        <div><span>📍️</span> 06 BP:10212 Ouagadougou 06, Ouagadougou</div>
+        <div><span>📞️</span> 25 40 77 99</div>
+    </footer>
+</body>
+</html>

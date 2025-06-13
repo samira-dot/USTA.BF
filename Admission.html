@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>page d'acceuil de l'USTA</title>
+        <link href="form.css" rel="stylesheet">	
+        <meta charset="UTF-8"> 
+    </head>
+    
+    <body>
+        <div id="header"><img src="logo2.png" alt="premier block"/>
+        </div> 
+        <nav class="navbar">
+            <a href="acceuil.html" class="logo">Accueil</a>
+            <div class="hamburger-menu" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links" style="list-style: none;">
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="Académique.html">Academique</a></li>
+                <li><a href="Admission.html">Admission</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav> 
+
+         <div class="background-wrapper"> 
+                <img src="interface.jpg" alt="arrière plan" class="background-image"> 
+            </div>
+
+ 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const navLinks = document.getElementById('nav-links');
+
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener('click', () => {
+                    hamburgerBtn.classList.toggle('open');
+                    navLinks.classList.toggle('active');
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburgerBtn.classList.remove('open');
+                        navLinks.classList.remove('active');
+                    });
+                });
+            } else {
+                console.error("Éléments 'hamburger-btn' ou 'nav-links' non trouvés.");
+            }
+        });
+    </script>
+    
+
+        
+        <form class="adform">
+            <fieldset class="formule">
+                <legend style="font-size: 23px"></legend><br><br>
+            <h1 style="margin-top: 0;  color: darkmagenta;text-align: center;">FORMULAIRE D'INSCRIPTION DE L'UNIVERSITE SAINT THOMAS D'ACQUIN</h1>                
+
+            <fieldset>
+                <legend class="form" style="font-size: 23px">INFORMATIONS PERSONNELLES</legend>
+
+                      
+                    <label for="Nom">Nom de famille:</label><br>
+                    <input type="text" name="nom" required>
+                 <br><br>   
+                
+                    <label for="prenom">Prénom(s):</label><br>
+                    <input type="text" name="prenom" required>
+                 <br><br>
+
+                    <label for="email">Adresse mail:</label><br>
+                    <input type="email" name="email" required>
+                 <br><br> 
+
+                   <label for="Date de naissance">Date de naissance:</label><br>
+                    <input type="date" name="datenaiss" min="2000-01-01" max="2008-01-01"required><br><br>
+
+                    <label for="Lieu de naissance">Lieu de naissance:</label><br>
+                    <input type="text" name="lieunaiss" required><br><br>
+
+                    <label for="nationalite">Nationalité:</label><br>
+                    <input type="text" name="nationalite" required><br><br>
+
+                    <label for="adr">Adresse complète:</label><br>
+                    <input type="text" name="adr" required><br><br>
+
+                    <label for="sexe">Sexe:</label><br>
+                    <select name="Sexe" style="background-color: rgb(142, 85, 142);" >
+                    <option value="">Choisir un sexe</option>
+                    <option value="feminin">Féminin</option>
+                    <option value="masculin">Masculin</option>
+                    </select><br><br>
+                    
+                   <label for="numero">Numéro de téléphone:</label><br>
+                    <input type="tel" name="numero"><br><br>
+            </fieldset><br><br>
+
+             <fieldset>
+                <legend style="font-size: 23px">INFORMATIONS PARENTALES</legend>
+
+                        <label for="Nom">Nom et Prénom(s)/Père/Mère/Tuteur</label><br>
+                    <input type="text" name="nom" required>
+                 <br><br>   
+                
+                    <label for="profession">Profession:</label><br>
+                    <input type="text" name="profession" required>
+                 <br><br>
+
+                    <label for="email">Adresse mail:</label><br>
+                    <input type="email" name="email" required>
+                 <br><br> 
+
+                    <label for="adr">Adresse complète:</label><br>
+                    <input type="text" name="adr" required><br><br>
+                    
+                   <label for="numero">Numéro de téléphone:</label><br>
+                    <input type="tel" name="numero"><br><br>
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend class="form" style="font-size: 23px">FORMATIONS DEMANDEES</legend>
+
+                 <label for="faculté">Facultés:</label><br>
+<select id="faculté" style="background-color:rgb(142, 85, 142);">
+    <option value="">Choisir une faculté</option>
+    <option value="FSJP">Faculté des sciences juridiques et politiques (FSJP)</option>
+    <option value="FASEG">Faculté des sciences économiques et de gestion (FASEG)</option>
+    <option value="FSDS">Faculté des sciences de la santé (FSDS)</option>
+    <option value="FLASHS">Faculté des langues, lettres, arts, sciences de l'homme et de la société (FLASHS)</option>
+    <option value="ISMT">Institut Supérieur des Métiers du Tertiaire (ISMT)</option>
+</select><br><br>
+
+<label for="filiere">Filières:</label><br>
+<select id="filiere" style="background-color: rgb(142, 85, 142);">
+    <option value="">Choisir une filière</option>
+</select>
+
+<script>
+    const filieres = {
+        "FSJP": ["Droit privé", "Droit public"],
+        "FASEG": ["Économie agricole et de l'environnement", "Macroéconomie et gestion du développement"],
+        "FSDS": ["Pharmacie", "Médecine"],
+        "FLASHS": ["Philosophie", "Bioéthique et éthique"],
+        "ISMT": ["Finance, comptabilité et audit", "Gestion commerciale et marketing"],
+    };
+    const facultySelect = document.getElementById('faculté');
+    const filiereSelect = document.getElementById('filiere');     
+
+    facultySelect.addEventListener('change', () => {
+        const selectedFaculty = facultySelect.value; 
+        filiereSelect.innerHTML = '<option value="">Choisir une filière</option>'; 
+
+        if (selectedFaculty && filieres[selectedFaculty]) {
+            const relatedFilieres = filieres[selectedFaculty];
+            relatedFilieres.forEach(filiere => {
+                const option = document.createElement('option');
+                option.value = filiere;
+                option.textContent = filiere;
+                filiereSelect.appendChild(option);
+            });
+        }
+    });
+</script><br><br>
+ </fieldset><br><br>
+
+ <div class="submit" align="right">
+<input type="submit" name="soumettre votre fiche d'inscription" value="Soumettre votre fiche d'inscription" style="background-color: rgb(142, 85, 142); ">
+<br><br>
+</div>
+</main>
+ </fieldset>
+</form>
+<footer>
+        <div>&copy; 2025 Université Saint Thomas D'Acquin.</div>
+          <div><span>📍️</span> 06 BP:10212 Ouagadougou 06,Ouagadougou</div>
+        <div><span> 📞️</span> 25 40 77 99</div>
+
+    </footer>
+</body>
+</html>
+         

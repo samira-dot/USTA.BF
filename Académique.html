@@ -1,0 +1,105 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <title>page Académique</title>
+        <link href="form.css" rel="stylesheet">	
+    </head>
+
+      <body>
+        <div id="header"><img src="logo2.png" alt="premier block"/>
+        </div>
+
+        <nav class="navbar">
+            <a href="acceuil.html" class="logo">Acceuil</a>
+            <div class="hamburger-menu" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links" style="list-style: none;">
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="Académique.html">Academique</a></li>
+                <li><a href="Admission.html">Admission</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav> 
+
+         <div class="background-wrapper"> 
+                <img src="interface.jpg" alt="arrière plan" class="background-image"> 
+            </div>
+ <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const navLinks = document.getElementById('nav-links');
+
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener('click', () => {
+                    hamburgerBtn.classList.toggle('open');
+                    navLinks.classList.toggle('active');
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburgerBtn.classList.remove('open');
+                        navLinks.classList.remove('active');
+                    });
+                });
+            } else {
+                console.error("Éléments 'hamburger-btn' ou 'nav-links' non trouvés.");
+            }
+        });
+    </script>
+
+    
+    <form>
+        <fieldset class="formule">
+            <legend></legend>
+        </u><h1 style="background-color:;" width="100%" height="100%" align="center" style="font-size: 80px;"> NOS FORMATIONS</h1></u>
+        <ol style="text-align: center;list-style: none;">
+            <b><u><li  style="font-size: 32px;color: ">Faculté des sciences juridiques et politiques(FSJP)</u></b>
+              <ul style="list-style-type:none"><br>
+                    <li><a href="droitprive.html" class="liens" style="font-size: 25px;color: white;">Droit privé</a></li>
+                    <li><a href="droitpublic.html" class="liens" style="font-size: 25px;color: white;">Droit public</a></li>
+                </ul>
+            </li><br><br>
+           <b><u><li style="font-size: 32px;color: ;"> Faculté des sciences économiques et de gestion(FASEG)</u></b>
+               <ul style="list-style-type:none"><br>
+                    <li><a href="agri.html" class="liens" style="font-size: 25px;color: white;">Economie agricole et de l'environnement</a></li>
+                    <li><a href="eco.html" class="liens" style="font-size: 25px;color: white;">Macroéconomie et gestion du developpement</a></li>
+                </ul>
+            </li><br><br>
+            <b><u><li style="font-size: 32px;color: ;">Faculté des sciences de la santé(FSDS)</u></b>
+               <ul style="list-style-type: none"><br>
+               <ul style="list-style-type: none"><br>
+                    <li><a href="pharm.html" class="liens" style="font-size: 25px;color: white;">Pharmacie</a> </li>
+                    <li><a href="med.html" class="liens" style="font-size: 25px;color: white;">Médécine</a></li>
+                </ul>
+            </li><br><br>
+            <b><u><li style="font-size: 32px;color: ;">Faculté des langues,lettres,arts,sciences de l'hommes et de la société(FLASHS)</u></b>
+               <ul style="list-style-type: none"><br>
+                    <li><a href="philo.html" class="liens" style="font-size: 25px;color: white;">Philosophie</a>
+                    <li><a href="bio.html" class="liens" style="font-size: 25px;color: white;">Bioéthique et éthique</a></li>
+                </ul>
+            </li><br><br>
+            <b><u><li style="font-size: 32px;color:;">Institut supérieur des métiers du tertiare(ISMT)</u></b>
+               <ul style="list-style-type: none"><br>
+                    <li><a href="compta.html" class="liens" style="font-size: 25px;color: white;">Finance, comptabilité, contôle et audit</a></li>
+                    <li><a href="gest.html" class="liens" style="font-size: 25px;color: white">Gestion commerciale et marketing</a></li>
+                </ul>
+            </li>
+        </ol>
+        </fieldset>
+    </form>
+    </main>
+
+     <div id="footer">
+        <div>&copy; 2025 Université Saint Thomas D'Acquin.</div>
+        <div><span>📍️</span> 06 BP:10212 Ouagadougou 06, Ouagadougou</div>
+        <div><span>📞️</span> 25 40 77 99</div>
+    </div>
+    </body>
+</html>     
+
+
+
+        

@@ -1,0 +1,173 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <title>gestion</title>
+        <link href="form.css" rel="stylesheet">	
+    </head>
+    <body>
+         <div id="header"><img src="logo2.png" alt="premier block"/>
+        </div> 
+        <nav class="navbar">
+            <a href="acceuil.html" class="logo">Acceuil</a>
+            <div class="hamburger-menu" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links" style="list-style: none;">
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="Académique.html">Academique</a></li>
+                <li><a href="Admission.html">Admission</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav> 
+
+         <div class="background-wrapper"> 
+                <img src="interface.jpg" alt="arrière plan" class="background-image"> 
+            </div>
+ <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const navLinks = document.getElementById('nav-links');
+
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener('click', () => {
+                    hamburgerBtn.classList.toggle('open');
+                    navLinks.classList.toggle('active');
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburgerBtn.classList.remove('open');
+                        navLinks.classList.remove('active');
+                    });
+                });
+            } else {
+                console.error("Éléments 'hamburger-btn' ou 'nav-links' non trouvés.");
+            }
+        });
+    </script>
+
+<h1 style="background-color: cornflowerblue;" width="200px" height="200px" align="center" style="font-size: 32px;"> GESTION COMMERCIALE ET MARKETING</h1> 
+        <div class="contenu">
+        <h2><u>Description de la Gestion commerciale et marketing</u></h2>    
+        <p>La gestion commerciale et marketing est un domaine clé pour toute entreprise souhaitant vendre ses produits ou services de manière efficace et durable. Bien qu'elles soient souvent liées, la gestion commerciale et le marketing ont des objectifs et des activités distincts mais complémentaires.</p>
+        <p>Une bonne stratégie marketing sans une exécution commerciale solide ne générera pas de revenus. Inversement, une excellente force de vente aura du mal à réussir si le marketing n'a pas su identifier les bons marchés ou créer des offres attractives. C'est leur synergie qui permet à l'entreprise d'atteindre ses objectifs commerciaux et de croître durablement.</p>
+        <h2><u>Les Principaux Enseignants en Gestion commerciale et marketing</u></h2>
+        <ul>
+            <li>Dr Blaise NEBIE</li>
+            <li>Dr Salamata ZALLE</li>
+            <li>Dr Valentine TRAORE</li>
+            <li>Dr Fadila BARRO</li>
+             <li>Dr Mariam SAWADOGO</li>
+        </ul><br><br>
+        
+        <u><h2 align="center">Calendrier Académique - Gestion commerciale et marketing(Année Universitaire 2025-2026)</h2></u>
+        <table border="5" width="100%" cellpading="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Périodes</th>
+                <th>Déroulement des activités</th>
+                <th>Cours</th>
+                <th>Travaux Dirigés</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <b><td colspan="4" align="center"><strong>Semestre 1 (Octobre 2025 - Février 2026)</strong></td></b>
+            </tr>
+            <tr>
+                <td><strong>Octobre - Novembre 2025</strong></td>
+                <td><strong>Début des cours & Travaux Dirigés</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Introduction à l'Économie Générale (60h)</strong></li>
+                        <li><strong>Principes Fondamentaux du Marketing(30h)</strong></li>
+                        <li><strong>Techniques de Vente et Négociation Commerciale (Initiation) (30h)</strong></li>
+                        <li><strong>Outils Quantitatifs et Statistiques Appliquées(30h)</strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        
+                        <li><strong>TD Introduction à l'Économie Générale (60h)</strong></li>
+                        <li><strong>TD Principes Fondamentaux du Marketing(30h)</strong></li>
+                        <li><strong>TD Techniques de Vente et Négociation Commerciale (Initiation) (30h)</strong></li>
+                        <li><strong>TD Outils Quantitatifs et Statistiques Appliquées(30h)</strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Décembre 2025</strong></td>
+                <td><strong><font color="red">Fin des cours & Examens du S1</strong></td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Délibération du Semestre1</font></strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Session de rattrapage du S1</font></strong></li>
+                        <li><strong><font color="red">Délibération de la session de rattrapage du S1</font></strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Janvier 2026</strong></td>
+                <td colspan="3" align="center"><strong><font color="red">Fin du Semestre1 & Début du Semestre2</strong></td>
+                
+            <tr>
+                <b><td colspan="4" align="center"><strong>Semestre 2 (Février2026 - Juillet 2026)</strong></td></b>
+            </tr>
+            <tr>
+                <td><strong>Février - Mars 2026</strong></td>
+                <td><strong>Début des cours & Travaux Dirigés</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Marketing Opérationnel et Communication (60h)</strong></li>
+                        <li><strong>Droit des Affaires et de la Consommation (30h)</strong></li>
+                        <li><strong>Comptabilité Générale et Analyse Financière (Initiation)(30h)</strong></li>
+                        <li><strong>Gestion de la Relation Client (CRM) et Fidélisation(30h)</strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong>TD Marketing Opérationnel et Communication (60h)</strong></li>
+                        <li><strong>TD Droit des Affaires et de la Consommation (30h)</strong></li>
+                        <li><strong>TD Comptabilité Générale et Analyse Financière (Initiation)(30h)</strong></li>
+                        <li><strong>TD Gestion de la Relation Client (CRM) et Fidélisation(30h)</strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Mai - Début Juin 2026</strong></td>
+                <td><strong><font color="red">Fin des cours & Examens S2</font></strong></td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Délibération du Semestre2</font></strong></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong><font color="red">Session de rattrapage du S2</font></strong></li>
+                        <li><strong><font color="red">Délibération de la session de rattrapage du S1 </font></strong></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Juillet 2026</strong></td>
+                <td colspan="3" align="center"><strong><font color="red">Fin du Semestre2</font></strong></td>
+                 </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+       <div id="footer">
+        <div>&copy; 2025 Université Saint Thomas D'Acquin.</div>
+        <div><span>📍️</span> 06 BP:10212 Ouagadougou 06, Ouagadougou</div>
+        <div><span>📞️</span> 25 40 77 99</div>
+    </div>
+    </body>
+    </html>
+
+            

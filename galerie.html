@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>page d'acceuil de l'USTA</title>
+        <link href="form.css" rel="stylesheet">	
+    </head>
+    
+    <body>
+        <div id="header"><img src="logo2.png" alt="premier block"/>
+        </div> 
+        <nav class="navbar">
+            <a href="acceuil.html" class="logo">Acceuil</a>
+            <div class="hamburger-menu" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links" style="list-style: none;">
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="Académique.html">Academique</a></li>
+                <li><a href="Admission.html">Admission</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav> 
+
+         <div class="background-wrapper"> 
+                <img src="interface.jpg" alt="arrière plan" class="background-image"> 
+            </div>
+
+             
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const navLinks = document.getElementById('nav-links');
+
+            if (hamburgerBtn && navLinks) {
+                hamburgerBtn.addEventListener('click', () => {
+                    hamburgerBtn.classList.toggle('open');
+                    navLinks.classList.toggle('active');
+                });
+
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburgerBtn.classList.remove('open');
+                        navLinks.classList.remove('active');
+                    });
+                });
+            } else {
+                console.error("Éléments 'hamburger-btn' ou 'nav-links' non trouvés.");
+            }
+        });
+    </script>
+         
+      <fieldset class="formule">
+        <legend></legend>   
+        <h1>Galerie de l'Université Saint Thomas d'Acquin</h1>
+
+  <div class="galerie">
+    <div class="image">
+      <img src="inter2.jpg" alt="campus" />
+     <img src="inter.jpg" alt="Campus"/>
+      <div class="texte">Campus Universitaire</div>
+    </div>
+
+    <div class="image">
+      <img src="img1.jpg" alt="personnelles" />
+      <img src="img2.jpg" alt="personnelles" />
+      <div class="texte">Quelques membres de l'administration</div>
+    </div>
+
+    <div class="image">
+      <img src="img6.jpg" alt="etudiants" />
+      <img src="img8.jpg" alt="etudiants" />
+      <div class="texte">Anciens membres du bureau des etudiants de l'Université Saint Thomas d'Acquin</div>
+    </div>
+
+    <div class="image">
+      <img src="img10.jpg" alt="etudiants" />
+      <img src="img11.jpg" alt="etudiants" />
+      <div class="texte">Journée de remise de diplomes à l'Université Saint Thomas d'Acquin</div>
+    </div>
+
+    <div class="image">
+      <img src="img12.jpg" alt="etudiants" />
+      <img src="img13.jpg" alt="etudiants" />
+      <div class="texte">Equipe de Basketball de l'Université Saint Thomas d'Acquin</div>
+    </div>
+    <div class="image">
+      <img src="img14.jpg" alt="etudiants" />
+      <img src="img9.jpg" alt="etudiants" />
+      <div class="texte">Celebration de la fête Patronale de l'Université Saint Thomas d'Acquin</div>
+    </div>
+</div>
+</fieldset>
+        <div id="footer">
+        <div>&copy; 2025 Université Saint Thomas D'Acquin.</div>
+        <div><span>📍️</span> 06 BP:10212 Ouagadougou 06, Ouagadougou</div>
+        <div><span>📞️</span> 25 40 77 99</div>
+    </div>
+
+</body>
+</html>
