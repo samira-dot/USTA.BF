@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>page d'acceuil de l'USTA</title>
         <link href="form.css" rel="stylesheet">	
-        <meta charset="UTF-8"> 
     </head>
     
     <body>
         <div id="header"><img src="logo2.png" alt="premier block"/>
         </div> 
         <nav class="navbar">
-            <a href="acceuil.html" class="logo">Accueil</a>
+            <a href="index.html" class="logo">Accueil</a>
             <div class="hamburger-menu" id="hamburger-btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul class="nav-links" id="nav-links" style="list-style: none;">
-                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="Académique.html">Academique</a></li>
                 <li><a href="Admission.html">Admission</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
             </ul>
         </nav> 
-
-         <div class="background-wrapper"> 
-                <img src="interface.jpg" alt="arrière plan" class="background-image"> 
-            </div>
-
  
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -52,15 +48,13 @@
         });
     </script>
     
-
-        
         <form class="adform">
             <fieldset class="formule">
                 <legend style="font-size: 23px"></legend><br><br>
             <h1 style="margin-top: 0;  color: darkmagenta;text-align: center;">FORMULAIRE D'INSCRIPTION DE L'UNIVERSITE SAINT THOMAS D'ACQUIN</h1>                
 
             <fieldset>
-                <legend class="form" style="font-size: 23px">INFORMATIONS PERSONNELLES</legend>
+               <legend class="form" style="font-size: 23px">INFORMATIONS PERSONNELLES</legend>
 
                       
                     <label for="Nom">Nom de famille:</label><br>
@@ -167,17 +161,17 @@
  </fieldset><br><br>
 
  <div class="submit" align="right">
-<input type="submit" name="soumettre votre fiche d'inscription" value="Soumettre votre fiche d'inscription" style="background-color: rgb(142, 85, 142); ">
+<input type="submit" name="soumettre votre fiche d'inscription" value="Soumettre" style="background-color: rgb(142, 85, 142); ">
 <br><br>
 </div>
 </main>
  </fieldset>
 </form>
-<footer>
+    <footer class="footer">
         <div>&copy; 2025 Université Saint Thomas D'Acquin.</div>
-          <div><span>📍️</span> 06 BP:10212 Ouagadougou 06,Ouagadougou</div>
-        <div><span> 📞️</span> 25 40 77 99</div>
-
+        <div><span>📍️</span> 06 BP:10212 Ouagadougou 06, Ouagadougou</div>
+        <div>COULIBALY Yé Samira</div>
+        <div><span>📞️</span> 25 40 77 99</div>
     </footer>
 </body>
 </html>
