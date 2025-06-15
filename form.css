@@ -80,7 +80,7 @@
     flex-direction: column;
     position: fixed;
     top: 0;
-    right: -250px;
+    right: -100%;
     width: 250px;
     height: 100%;
     padding: 80px 20px;
