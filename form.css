@@ -64,14 +64,17 @@
   display: none;
 }
 
-/* Menu horizontal (desktop) */
+
 .nav-links {
   display: flex;
   gap: 40px;
 }
 
-/* Menu mobile (caché) */
+
 @media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
   .hambmenu {
     display: block;
   }
@@ -97,7 +100,7 @@
   }
 }
 
-/* Overlay */
+
 .lamano19 {
   position: fixed;
   top: 0;
