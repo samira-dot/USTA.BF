@@ -7,45 +7,45 @@
         <link href="form.css" rel="stylesheet">	
     </head>
     <body>
-         <div id="header"><img src="logo2.png" alt="premier block"/>
-        </div> 
-        <nav class="navbar">
-            <a href="index.html" class="logo">Accueil</a>
-            <div class="hamburger-menu" id="hamburger-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="nav-links" style="list-style: none;">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Académique.html">Academique</a></li>
-                <li><a href="Admission.html">Admission</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-            </ul>
-        </nav> 
+         <header id="header">
+  
+  <div class="header-top">
+    <img src="logo2.png" alt="Logo" class="logo-img">
+  </div>
 
- <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const hamburgerBtn = document.getElementById('hamburger-btn');
-            const navLinks = document.getElementById('nav-links');
+  
+  <div class="navbar">
+    <a href="index.html" class="logo">Accueil</a>
 
-            if (hamburgerBtn && navLinks) {
-                hamburgerBtn.addEventListener('click', () => {
-                    hamburgerBtn.classList.toggle('open');
-                    navLinks.classList.toggle('active');
-                });
+    <button class="hambmenu" id="hambmenu">&#9776;</button>
 
-                navLinks.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        hamburgerBtn.classList.remove('open');
-                        navLinks.classList.remove('active');
-                    });
-                });
-            } else {
-                console.error("Éléments 'hamburger-btn' ou 'nav-links' non trouvés.");
-            }
-        });
-    </script>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="Académique.html">Académique</a>
+      <a href="Admission.html">Admission</a>
+      <a href="galerie.html">Galerie</a>
+    </nav>
+  </div>
+
+  
+  <div id="lamano19" class="lamano19"></div>
+</header>
+<script>
+  const hambmenu = document.getElementById('hambmenu');
+  const menu = document.getElementById('nav-links');
+  const lamano19 = document.getElementById('lamano19');
+
+  hambmenu.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    lamano19.classList.toggle('active');
+  });
+
+  lamano19.addEventListener('click', () => {
+    menu.classList.remove('active');
+    lamano19.classList.remove('active');
+  });
+</script>
+
 
         <h1 style="background-color: cornflowerblue;" width="200px" height="200px" align="center" style="font-size: 32px;">PHARMACIE</h1> 
 
@@ -161,10 +161,9 @@
         </tbody>
     </table>
     </div>
-<footer class="footer">
+    <footer class="footer">
         <div>&copy; 2025 Université Saint Thomas D'Acquin.</div>
         <div><span>📍️</span> 06 BP:10212 Ouagadougou 06, Ouagadougou</div>
-        <div>COULIBALY Yé Samira</div>
         <div><span>📞️</span> 25 40 77 99</div>
     </footer>
     </body>
