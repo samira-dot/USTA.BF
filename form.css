@@ -90,7 +90,6 @@
     z-index: 1001;
     visibility: hidden;
     box-sizing: border-box;
-    max-width: 100vw;
   }
 
   .nav-links.active {
